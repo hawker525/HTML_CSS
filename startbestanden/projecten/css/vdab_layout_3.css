@@ -7,7 +7,9 @@ startbestand
 
 
 /****algemeen****/
-div, aside, header, footer {outline:1px dashed red;}
+div, aside, header, footer {
+	/*outline:1px dashed red;*/
+}
 div {
 	margin:0;
 	padding:0;
@@ -36,6 +38,7 @@ header {
 }
 #logo{
 	float:left;
+	margin: 0 0 0 -120px;
 	padding:0;
 }
 header ul {
@@ -76,15 +79,34 @@ header h3{font-size:1.1em;margin:0.2em 0; line-height:1.2em;}
 
 /****container class****/
 
-.container  {}
+.container  {
+	width: 80%;
+	min-width: 800px;
+	margin: 0 auto;
+}
 .container h1 {color:gray;	}
+/*#inhoud {background-color: red;}
 
 /****aside, kolommen****/
-
+aside, .kol{
+	--webkit-box-sizing: border-box;
+	--moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 4px;
+	border: 2px solid #E4F0F3;
+}
 aside 	{}
 .kol 	{}
-.twee	{}
-.drie	{}
+.een {
+	float: left;
+}
+.twee	{
+	margin: 0 246px 0 186px;
+}
+.drie	{
+	float: right;
+	width: 220px;
+}
 
 /****footer****/
 footer {
@@ -104,4 +126,16 @@ footer li {
 }
 footer p {
 	font-size: smaller;
+}
+/*clearfix hack*/
+.clearFix:before, .clearFix:after {
+	content: " ";
+	display: table;
+}
+.clearFix:after {
+	clear: both;
+}
+/* enkel voor IE6/7 */
+.clearFix {
+	*zoom: 1;
 }

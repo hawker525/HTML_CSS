@@ -7,7 +7,9 @@ startbestand
 
 
 /****algemeen****/
-div, aside, header, footer {outline:1px dashed red;}
+div, aside, header, footer {
+	/*outline:1px dashed red;*/
+}
 div {
 	margin:0;
 	padding:0;
@@ -36,6 +38,7 @@ header {
 }
 #logo{
 	float:left;
+	margin: 0 0 0 -120px;
 	padding:0;
 }
 header ul {
@@ -76,11 +79,20 @@ header h3{font-size:1.1em;margin:0.2em 0; line-height:1.2em;}
 
 /****container class****/
 
-.container  {}
+.container  {
+	width: 960px;
+	margin: 0 auto;
+}
 .container h1 {color:gray;	}
+#inhoud {background: url(../../img/scheidingslijnen.png) 0 0 repeat-y;}
 
 /****aside, kolommen****/
-
+aside, .kol{
+	float: left;
+	width: 300px;
+	margin:0  6px;
+	padding: 0 4px;
+}
 aside 	{}
 .kol 	{}
 .twee	{}
@@ -104,4 +116,16 @@ footer li {
 }
 footer p {
 	font-size: smaller;
+}
+/*clearfix hack*/
+.clearFix:before, .clearFix:after {
+	content: " ";
+	display: table;
+}
+.clearFix:after {
+	clear: both;
+}
+/* enkel voor IE6/7 */
+.clearFix {
+	*zoom: 1;
 }
