@@ -1,0 +1,17 @@
+#menu {
+list‐style-type:none;
+overflow:auto;
+}
+#menu li {
+display:inline-block;
+padding:1em;
+background-color:yellow;
+}
+#menu li:hover {
+background-color:red;
+color:white;
+}
+#menu li a {
+display:inline;
+text-decoration:none;
+}
