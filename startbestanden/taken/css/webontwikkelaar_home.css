@@ -1,0 +1,41 @@
+/** typografie **/
+body {
+	font: small Arial, sans-serif;
+}
+
+/** structuur **/
+body{
+  margin: 0;
+}
+section, article, div {
+  outline:1px dashed red;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.loginContainer{
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+#loginMenu{
+  float: right;
+  padding: 0.2%;
+}
+#loginMenu input.button{
+  padding: 0.3em;
+}
+
+/** kleur **/
+#loginMenu{
+ background-color: #8FB209;
+}
+#loginMenu label{
+  color: white;
+}
+.button{
+  background-color: #6D9207;
+  color: white;
+  border: none;
+}
