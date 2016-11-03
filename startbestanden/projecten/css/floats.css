@@ -12,6 +12,7 @@ div {
 }
 img {
 	margin-right:1em;
+	float:left;
 }
 .wrapper {
 	width:60%;
@@ -21,12 +22,19 @@ img {
 	border:none;
 }
 .links {
+	float:left;
+	width: 30%;
 	background:#55C5E8;
-	padding:1em;
+	padding:1em 2.5%;
+}
+.midden {
+	background:#55C5E8;
 }
 .rechts {
+	float:left;
+	width: 60%;
 	background:#FD6943;
-	padding:1em 2em;
+	padding:1em 2.5%;
 }
 .sectie {
 	background:#F7F7F7;
@@ -39,6 +47,7 @@ img {
 	height:130px;
 	padding:0.625em;
 	margin:0.625em;
+	float:left;
 }
 .header {
 	background:#D93E89;
@@ -53,4 +62,18 @@ img {
 	font-size:4em;
 	color:white;
 	margin:0.25em 0;
+}
+/* clear */
+.cf {clear:both}
+/*clearfix hack*/
+.clearFix:before, .clearFix:after {
+	content: " ";
+	display: table;
+}
+.clearFix:after {
+	clear: both;
+}
+/* enkel voor IE6/7 */
+.clearFix {
+ *zoom: 1;
 }
